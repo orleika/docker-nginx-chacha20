@@ -2,8 +2,8 @@ FROM debian
 
 MAINTAINER orleika "orleika.net@gmail.com"
 
-RUN apt update && \
-apt install git make cmake wget libpcre3 libpcre3-dev zlib1g-dev libgd-dev libgd2-xpm-dev libgd-gd2-perl build-essential libpng12-dev libjpeg-dev && \
+RUN apt-get update && \
+apt-get install git make cmake wget libpcre3 libpcre3-dev zlib1g-dev libgd-dev libgd2-xpm-dev libgd-gd2-perl build-essential libpng12-dev libjpeg-dev -y && \
 cd /usr/local/src && \
 wget http://zlib.net/zlib-1.2.8.tar.gz && \
 tar zxf zlib-1.2.8.tar.gz && \
