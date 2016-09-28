@@ -29,6 +29,7 @@ cd nginx-1.11.4 && \
 --http-fastcgi-temp-path=/var/lib/nginx/fastcgi \
 --with-debug \
 --with-http_gzip_static_module \
+--with-ipv6 \
 --with-http_v2_module \
 --with-http_ssl_module \
 --with-pcre-jit \
