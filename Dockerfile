@@ -10,7 +10,7 @@ tar zxf zlib-1.2.8.tar.gz && \
 wget https://www.openssl.org/source/openssl-1.1.0b.tar.gz && \
 tar zxf openssl-1.1.0b.tar.gz && \
 useradd -s /sbin/nologin nginx && \
-mkdir /var/{log,run}/nginx && \
+mkdir -p /var/{log,run}/nginx && \
 chown nginx:nginx /var/{log,run}/nginx/ && \
 wget https://nginx.org/download/nginx-1.11.4.tar.gz && \
 tar zxf nginx-1.11.4.tar.gz && \
